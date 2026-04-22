@@ -4,10 +4,13 @@ with open("animals.txt","r") as animals_file:
     for animals in animals_file:
        print("名称：",animals.strip())
 
-#2 OK
+#2
+fruits = ["apple","banana","orange"]
 with open("fruits.txt","w") as fruits_file:
-    fruits_file.write("apple","banana","orange")
-with open(fruits_file,"r") as fruits_file:
+    for fruit in fruits:
+        fruits_file.write(fruit+"\n")
+
+with open("fruits.txt","r") as fruits_file:
     for fruits in fruits_file:
         print("名称：",fruits.strip())
 
